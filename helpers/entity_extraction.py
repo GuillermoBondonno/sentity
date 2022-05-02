@@ -1,5 +1,11 @@
 import spacy
-nlp = spacy.load("en_core_web_lg")
+
+try:
+    nlp = spacy.load("en_core_web_lg")
+except: # If not present, we download
+    spacy.cli.download("en_core_web_lg")
+    nlp = spacy.load("en_core_web_lg")
+
 #import pickle
 
 #with open('named_entity_recognition/ner_pickle', 'rb') as f:
