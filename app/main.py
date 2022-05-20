@@ -32,8 +32,8 @@ def read_docs(data: dict = {"sentence" : "", "entities" : None, "perform_auto_en
 #    tags=["entities", "sentiment"],
 #)
 
-if __name__ == "__main__":
-    import sys
-    port = int(sys.argv[1])
-    uvicorn.run("main:app", host="0.0.0.0", port=port,
-                debug=True, log_level="info", reload=True)
+#if __name__ == "__main__":
+#    import sys
+#    port = int(sys.argv[1])
+#    uvicorn.run("main:app", host="0.0.0.0", port=port,
+#                debug=True, log_level="info", reload=True)
