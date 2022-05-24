@@ -13,6 +13,7 @@
 from nltk import word_tokenize, pos_tag
 import nltk
 nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
 
 def nlp(sentence):
     words = word_tokenize(sentence)
