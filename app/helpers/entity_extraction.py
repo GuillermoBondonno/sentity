@@ -11,6 +11,7 @@
 #with open('named_entity_recognition/ner_pickle', 'rb') as f:
 #    nlp = pickle.load(f)
 from nltk import word_tokenize, pos_tag
+nltk.download('punkt')
 
 def nlp(sentence):
     words = word_tokenize(sentence)
